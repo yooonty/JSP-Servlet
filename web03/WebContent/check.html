@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function me() {
+		name = document.getElementById("name").value;
+		company = document.getElementById("company").value;
+		position = document.getElementById("position").value;
+		gender = document.getElementById("gender").value;
+		resultTag = document.getElementById("result");
+		
+		if (gender == "man" || gender == "남자") {
+			
+		} else {
+
+		}
+		
+		resultTag.innerHTML = '<b>'+company+"</b>회사에 <b>" +position+'</b>으로 있는 <b>'+name+'</b>입니다.<br>';
+	}
+</script>
+</head>
+<body>
+	이름: <input type="text" id="name"> <br>
+	회사명: <input type="text" id="company"> <br>
+	직책: <input type="text" id="position"> <br>
+	성별: <input type="text" id="gender"> <br>
+	<button onclick="me()">확인</button>
+	<hr>
+	<div id="result" style="background: yellow; width: 500px; height: 50px; font-size: 30px">결과넣는 곳.</div>
+
+</body>
+</html>

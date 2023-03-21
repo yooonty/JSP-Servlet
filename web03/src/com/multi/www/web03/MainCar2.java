@@ -1,0 +1,14 @@
+package com.multi.www.web03;
+
+public class MainCar2 {
+
+	public static void main(String[] args) {
+		Car car; // 12바이트 차지
+		for (int i = 0; i < 100; i++) {
+			car = new Car("빨강" + i, 10, 200);
+			System.out.println(car); //주소확인!
+		}
+		System.out.println("메모리크기>> " + 12 * 100);
+	}
+
+}
